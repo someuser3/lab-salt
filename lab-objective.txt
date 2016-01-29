@@ -1,0 +1,17 @@
+Objective: Create basic salt states
+
+1. Create a salt state that will ensure a user with your name exists
+2. Make sure the user belongs to the wheel group
+3. Create a salt state to ensure that the program htop is installed
+4. Create a salt state that provisions /etc/crypttab
+5. Create a salt state that sets the hostname to <SID>.acs.edcc.edu
+6. Run  salt '*' state.highstate > /root/labs/lab6-a.txt
+
+Notes: Make sure your salt minion is taking commands from your salt master before trying to create a state file.
+
+Commands:
+vi
+salt
+
+Files to upload:
+/root/labs/lab6.txt 

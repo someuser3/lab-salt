@@ -1,4 +1,4 @@
-nikolay:
+nick:
   user.present:
     - fullname: Nick K
 #    - shell: /bin/zsh

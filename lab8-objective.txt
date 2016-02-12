@@ -1,0 +1,19 @@
+1. Create a script that runs the firewall script, waits 30 seconds and then puts the old (safe) rules back
+
+2. Create a firewall script that creates rules to allow the following services to answer requests from the outside
+
+ssh
+salt
+dns
+web
+samba
+3. Turn on SELinux and set the allow_polyinstantiation boolean to on
+
+4. Create a salt state that ensures iptables is installed, the service is running and /root/lab/lab8a.txt is provisioned as /etc/syconfig/iptables - save it as /srv/salt/iptables.sls
+
+5. Create a salt state that ensures that selinux is enforcing - save it as /srv/salt/selinux.sls
+
+6. Save the output of iptables-save > /root/labs/lab8a.txt
+
+7. Save the output of getsebool -a | grep polyinstantiation to /root/labs/lab8b.txt
+

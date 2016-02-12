@@ -1,19 +1,11 @@
-1. Create a script that runs the firewall script, waits 30 seconds and then puts the old (safe) rules back
+Slightly midified lab 8 objectives:
 
-2. Create a firewall script that creates rules to allow the following services to answer requests from the outside
+1. Create a script that runs the firewall script, waits 30 seconds and then puts the old (safe) rules back (see bin/restartfirewall.sh)
+2. Create a firewall script that creates rules to allow the following services to answer requests from the outside: ssh, salt, dns, web, samba (see bin/firewall.sh)
+3. Save the output of iptables-save as /root/labs/lab8a.txt (also saved as salt/files/os/centos7/iptables-file)
+4. Create a salt state that ensures iptables is installed, the service is running, and salt/files/os/centos7/iptables-file is provisioned as /etc/syconfig/iptables (see salt/packages/iptables.sls)
+5. Create a salt state that ensures that selinux is enforcing and the polyinstantiation_enable boolean is set to on (see salt/packages/selinux.sls)
+7. Save the output of getsebool -a | grep polyinstantiation > /root/lab/lab8b.txt
 
-ssh
-salt
-dns
-web
-samba
-3. Turn on SELinux and set the allow_polyinstantiation boolean to on
-
-4. Create a salt state that ensures iptables is installed, the service is running and /root/lab/lab8a.txt is provisioned as /etc/syconfig/iptables - save it as /srv/salt/iptables.sls
-
-5. Create a salt state that ensures that selinux is enforcing - save it as /srv/salt/selinux.sls
-
-6. Save the output of iptables-save > /root/labs/lab8a.txt
-
-7. Save the output of getsebool -a | grep polyinstantiation to /root/labs/lab8b.txt
+Submit output of steps 3, 4, 5, and 6.
 

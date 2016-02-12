@@ -5,7 +5,7 @@ Objective: Create basic salt states
 3. Create a salt state to ensure that the program htop is installed
 4. Create a salt state that provisions /etc/crypttab
 5. Create a salt state that sets the hostname to <SID>.acs.edcc.edu
-6. Run  salt '*' state.highstate > /root/labs/lab6-a.txt
+6. Run  salt '*' state.highstate > /root/labs/lab6.txt
 
 Notes: Make sure your salt minion is taking commands from your salt master before trying to create a state file.
 

@@ -1,12 +1,13 @@
 iptables-services:
   pkg.installed
 
-
 iptables:
   pkg:
     - installed
   service:
     - running
+    - enable: True
   file.managed:
-    - name: /etc/syconfig/iptables
-    - source: salt://files/iptables
+    - name: /etc/sysconfig/iptables
+    - source: salt://files/os/centos7/iptables-file
+    - replace: True

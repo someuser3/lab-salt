@@ -10,3 +10,7 @@ Output from exportfs
 /etc/exports
 nfs-config.sls
 nfs.sls
+
+
+
+https://www.howtoforge.com/setting-up-an-nfs-server-and-client-on-centos-6.3

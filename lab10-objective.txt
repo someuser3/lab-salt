@@ -1,0 +1,12 @@
+Objective: Configure SSH 
+
+Create an SSH configuration that only allows users by name and does NOT permit root logins. 
+Create a public/private keypair so you can log in remotely without password and append the public key to the authorized_keys file.
+Create a salt state that ensures sshd is on and provisions the authorized_keys file
+
+
+What to submit:
+
+/etc/ssh/sshd_config
+/srv/salt/sshd.sls
+/srv/salt/authorized_keys

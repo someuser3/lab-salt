@@ -11,3 +11,8 @@ iptables:
     - name: /etc/sysconfig/iptables
     - source: salt://files/os/centos7/iptables-file
     - replace: True
+
+firewalld:
+  service:
+    - dead
+    - enable: False

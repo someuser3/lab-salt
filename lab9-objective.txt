@@ -1,0 +1,12 @@
+Create an NFS network file server
+
+Share out /home/public to everyone but squash all users
+Share out /home/private to the local network and allow root
+Create a salt state that provisions your configured /etc/exports - call it nfs-config.sls
+Create a salt state the ensures that all relevant nfs packages are installed and the service is on - call it nfs.sls
+Files to Upload
+
+Output from exportfs
+/etc/exports
+nfs-config.sls
+nfs.sls
